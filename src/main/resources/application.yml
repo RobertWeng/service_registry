@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: service_registry
+eureka:
+  client:
+    register-with-eureka: false # Server itself will not register with another Eureka Server
+    fetch-registry: false # Eureka Server won’t try to fetch the registry of services from another Eureka Server
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+server:
+  port: 8761
